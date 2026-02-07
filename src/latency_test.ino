@@ -78,17 +78,17 @@ void printResults() {
   Serial.print("Avg:\t");
   Serial.print(average / measurementCount);
   Serial.print("us\t(");
-  Serial.print(average / measurementCount / 1000);
+  Serial.print(round(average / measurementCount / 1000));
   Serial.println("ms)");
   Serial.print("Min:\t");
   Serial.print(min);
   Serial.print("us\t(");
-  Serial.print(min / 1000);
+  Serial.print(round(min / 1000));
   Serial.println("ms)");
   Serial.print("Max:\t");
   Serial.print(max);
   Serial.print("us\t(");
-  Serial.print(max / 1000);
+  Serial.print(round(max / 1000));
   Serial.print("ms)");
   Serial.println();
   
