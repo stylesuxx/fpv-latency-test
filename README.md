@@ -27,6 +27,8 @@ pio device monitor
 
 The serial monitor runs at 115200 baud. Send `1` to calibrate and `2` to start measurements.
 
+100 measurements are taken with a random delay of 500-1000ms between each. The randomized interval avoids aliasing with the video system's frame rate. A fixed interval could consistently land on the same phase of the frame cycle, skewing results high or low. Randomizing spreads measurements across different frame phases for a more representative average.
+
 ## Pinout
 
 ### LED (pin 13)
